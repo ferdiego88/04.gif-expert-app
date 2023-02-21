@@ -20,7 +20,7 @@ export const useFetchGifs = (category) => {
                     loading:false
                 });
 
-            }, 3000);
+            }, 1000);
 
 
         })
