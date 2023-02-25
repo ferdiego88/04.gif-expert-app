@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-export const GifGridItem = ({id,title,url}) => {
+const GifGridItem = ({id,title,url}) => {
 
   return (
     <div className='card animate__animated animate__fadeIn'>
@@ -10,3 +10,5 @@ export const GifGridItem = ({id,title,url}) => {
     </div>
   )
 }
+
+export default GifGridItem
