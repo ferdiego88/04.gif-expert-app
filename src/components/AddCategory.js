@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
+        console.log('handleInputChange llamado');
     }
 
     const handleSubmit = (e) => {
@@ -21,7 +22,8 @@ import PropTypes from 'prop-types';
 
     return (
         <form onSubmit={handleSubmit}>
-
+        
+        <p> {inputValue} </p>
         <input 
         type="text"
         value={inputValue}

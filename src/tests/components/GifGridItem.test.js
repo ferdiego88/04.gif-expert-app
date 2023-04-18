@@ -15,13 +15,13 @@ describe('Expects <GifGridItem />', () => {
         expect(wrapper).toMatchSnapshot();
      })
 
-     test('should be a paragraph with the title', () => {
+     test('should be have a paragraph with the title', () => {
 
         const p = wrapper.find('p');
         expect(p.text().trim()).toBe(title);
      })
 
-     test('should have a image and url equals to props', () => {
+     test('should have a image equals to url and alt the props', () => {
 
         const img = wrapper.find('img');
         expect(img.prop('src')).toBe(url);
