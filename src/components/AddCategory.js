@@ -12,7 +12,9 @@ import PropTypes from 'prop-types';
 
     const handleSubmit = (e) => {
         
+        
         e.preventDefault();
+        console.log('handleSubmit',inputValue);
 
         if (inputValue.trim().length > 2) {
             setCategories(category => [inputValue,...category]);
