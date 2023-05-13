@@ -37,4 +37,27 @@ describe('Test in AddCategory', () => {
        })
 
 
+       test('should call setCategories and clear the textBox', () => { 
+
+          //1. simular el inputChange.
+          const value = "Hola cajita";
+          const input = wrapper.find('input');
+          input.simulate('change',{target:{value}});
+          
+          //2. Simular el submit.
+          wrapper.find('form').simulate('submit',{preventDefault(){}});
+          
+          
+          //3. setCategories se debe haber llamado
+          expect(setCategories).toHaveBeenCalledTimes(1);
+
+          //Se espera que setCategories debe de ser una Funcion
+          expect(setCategories).toHaveBeenCalledWith(expect.any(Function));
+          //4. el valor del input debe de estar vacio
+          expect(wrapper.find('input').prop('value')).toBe('');
+
+
+        })
+
+
  })
