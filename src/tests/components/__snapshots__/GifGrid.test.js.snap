@@ -20,7 +20,7 @@ exports[`Tests in GifGrid should display correctly 1`] = `
 </Fragment>
 `;
 
-exports[`Tests in GifGrid should show items when the images are loaded 1`] = `
+exports[`Tests in GifGrid should show items when the images are loaded useFetchGifs 1`] = `
 <Fragment>
   <h3
     className="animate__animated animate__fadeIn"
@@ -35,6 +35,12 @@ exports[`Tests in GifGrid should show items when the images are loaded 1`] = `
     <GifGridItem
       id="ABC"
       key="ABC"
+      title="Gianluca Bebe"
+      url="https://www.images.com/bebe.jpg"
+    />
+    <GifGridItem
+      id="123"
+      key="123"
       title="Gianluca Bebe"
       url="https://www.images.com/bebe.jpg"
     />
