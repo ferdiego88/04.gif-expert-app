@@ -1,6 +1,6 @@
 //import '@testing-library/jest-dom/extend-expect';
 import Enzyme from 'enzyme';
-import Adapter from '@cfaester/enzyme-adapter-react-18';
+import Adapter from 'enzyme-adapter-react-16';
 import {createSerializer} from 'enzyme-to-json';
 
 
